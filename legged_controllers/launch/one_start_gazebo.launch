@@ -16,6 +16,6 @@
         <include file="$(find legged_controllers)/launch/record_data.launch"/>
     </group>
 
-    <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" output="screen"></node>
+    <!-- <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" output="screen"></node> -->
 
 </launch>

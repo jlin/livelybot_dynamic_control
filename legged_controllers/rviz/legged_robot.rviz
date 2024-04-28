@@ -84,6 +84,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        l_ankle_roll_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         leg_l1_link:
           Alpha: 1
           Show Axes: false
@@ -150,6 +155,11 @@ Visualization Manager:
           Show Trail: false
           Value: true
         leg_r_f2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        r_ankle_roll_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -171,6 +181,8 @@ Visualization Manager:
           Value: true
         imu_link:
           Value: true
+        l_ankle_roll_link:
+          Value: true
         leg_l1_link:
           Value: true
         leg_l2_link:
@@ -201,6 +213,8 @@ Visualization Manager:
           Value: true
         odom:
           Value: true
+        r_ankle_roll_link:
+          Value: true
       Marker Alpha: 1
       Marker Scale: 1
       Name: TF
@@ -217,19 +231,21 @@ Visualization Manager:
                 leg_l3_link:
                   leg_l4_link:
                     leg_l5_link:
-                      leg_l_f1_link:
-                        {}
-                      leg_l_f2_link:
-                        {}
+                      l_ankle_roll_link:
+                        leg_l_f1_link:
+                          {}
+                        leg_l_f2_link:
+                          {}
             leg_r2_link:
               leg_r1_link:
                 leg_r3_link:
                   leg_r4_link:
                     leg_r5_link:
-                      leg_r_f1_link:
-                        {}
-                      leg_r_f2_link:
-                        {}
+                      r_ankle_roll_link:
+                        leg_r_f1_link:
+                          {}
+                        leg_r_f2_link:
+                          {}
       Update Interval: 0
       Value: true
     - Class: rviz/MarkerArray
@@ -322,13 +338,13 @@ Visualization Manager:
       Value: true
     - Alpha: 1
       Class: rviz/Axes
-      Enabled: true
+      Enabled: false
       Length: 1
       Name: Axes
       Radius: 0.10000000149011612
       Reference Frame: imu_link
       Show Trail: false
-      Value: true
+      Value: false
     - Class: rviz/MarkerArray
       Enabled: false
       Marker Topic: /distance_markers
@@ -414,18 +430,18 @@ Visualization Manager:
       Value: true
     - Alpha: 1
       Class: rviz/Axes
-      Enabled: true
+      Enabled: false
       Length: 1
       Name: Axes
       Radius: 0.10000000149011612
       Reference Frame: odom
       Show Trail: false
-      Value: true
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 238; 238; 238
     Default Light: true
-    Fixed Frame: imu_link
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
